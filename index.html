@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+/* navbar*/
+.navbar {
+    background-color: rgba(192, 192, 192, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: top 0.3s, opacity 0.3s;
+    /* Adjust height as needed */
+}
+
+.Vaidyuthak-logo2 {
+    height: 10vh;
+    width: auto;
+    background-color: black;
+    border-radius: 5px;
+
+
+}
+
+/* Navbar links styling - always visible in a row */
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+}
+
+.nav-link {
+
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+
+}
+
+.nav-link:hover {
+
+    color: #ffffff;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+/* Responsive layout to keep links in a row even on smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-links {
+        gap: 15px;
+    }
+
+    .nav-link {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+
+.main_body {
+    background-image: url("https://res.cloudinary.com/dylzolnfu/image/upload/v1731426872/bg3_l0x4wm.jpg");
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    padding-top: 25vh;
+
+}
+
+.vaidyathak_title {
+    width: 80vw;
+}
+
+.vaidhayathuk_subtitle {
+    font-size: 4vw;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+.about_us_section {
+    background-image: url("");
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    color: #ffffff;
+    font-size: 10px;
+    margin-bottom: 3vh;
+}
+
+/** ****/
+.title h1,
+#title1 {
+    font-size: 1.5rem;
+    color: #00bfff;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 10px;
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background-color: #00bfff;
+    margin: 0 auto;
+    border: none;
+}
+
+
+
+
+/** ****/
+.gallery_carsol {
+    padding: 5vw;
+    padding-top: 0px;
+    margin-top: 0vh;
+
+}
+
+.gallery_carsol1 {
+    padding: 20vw;
+    padding-top: 0px;
+    margin-top: 0vh;
+
+}
+
+.gallery_title {
+    font-size: 5vw;
+    text-align: center;
+    color: #00bfff;
+    margin-bottom: 0vh;
+}
+
+/** ****/
+.event_highlight {
+    text-align: center;
+    font-size: 5vw;
+    color: #ffffff;
+    margin-bottom: 4vh;
+}
+
+/* introduction to vents** */
+.competitions-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 50px;
+    /* Adjust for more/less side space */
+    max-width: 1200px;
+    /* Center content within a maximum width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.competition {
+
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    border: 4px solid white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 3vh;
+}
+
+.competition h2 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    text-decoration: underline;
+}
+
+.competition p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.competition .event-date {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+    color: yellow;
+}
+
+.register-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(23, 212, 67, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.register-link:hover {
+    background-color: #218838;
+    transform: translateY(-4px);
+}
+
+.know-more-link {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 12px 24px;
+    background-color: orange;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(255, 165, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.know-more-link:hover {
+    background-color: #e69500;
+    transform: translateY(-4px);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .competition h2 {
+        font-size: 1.5em;
+    }
+
+    .competition p {
+        font-size: 1em;
+    }
+
+    .register-link {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .know-more-link {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .competitions-wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* presentaion * */
+.first-competition-box {
+    width: 100%;
+    /* Set a fixed width */
+    height: auto;
+    /* Set a fixed height */
+    /* Centers the box */
+    padding: 0px;
+    border-radius: 0px;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+
+    text-align: center;
+    background-color: #0fffff0;
+}
+
+.content {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+
+
+
+/** ****/
+
+/** ****/
+.faculty_card {
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    height: auto;
+    color: #ffffff;
+}
+
+.faculty_img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.faculty_card2 {
+    padding: 10px;
+    text-align: center;
+    width: 180px;
+    height: auto;
+    color: #ffffff;
+}
+
+.faculty_img2 {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.faculty_name {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.faculty_post {
+    font-size: 10px;
+
+}
+
+.faculty_name2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.faculty_post2 {
+    font-size: 20px;
+
+}
+
+
+
+/* Title Styling */
+.title h1,
+#title1 {
+    font-size: 1.5rem;
+    color: #00bfff;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 10px;
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background-color: #00bfff;
+    margin: 0 auto;
+    border: none;
+}
+
+/* Faculty Section */
+.faculty-section {
+    padding: 16px;
+    text-align: center;
+}
+
+.faculty-container {
+    margin-top: px;
+}
+
+.faculty-card {
+
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.faculty-card1 {
+
+    padding: 10px;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.faculty-card h3,
+.faculty-card1 h3 {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.faculty-card p,
+.faculty-card1 p {
+    font-size: 0.5rem;
+    color: #ccc;
+}
+
+.img-faculty {
+    height: 100px;
+    width: 90px;
+    margin: 16px;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+/* Contact Section */
+.contact-section {
+    padding-top: 5px;
+
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    margin-top: 5px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+.Vaidyuthak-logo1 {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+.follow-us-section {
+    background-color: white;
+}
+
+.follow-us-icon-container {
+    background-color: #faf7e8;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.icon {
+    color: #d0b200;
+    font-size: 28px;
+}
+
+.footer-section-address {
+    color: #d0b200;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+.footer-para {
+    font-size: 13px;
+    font-family: "Monospace";
+    color: silver;
+}
+
+
+button {
+            padding: 12px 20px;
+            background-color: #4CAF50;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Add margin to the left of the download button */
+        .download-button {
+            margin-left: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            align-items: center;
+        }
+
+    /* General button styling */
+    .terms-button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    /* Mobile view adjustment */
+    @media (max-width: 768px) {
+        .terms-button {
+            margin-top: 40px; /* Add space above the button for mobile view */
+        }
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar " id="navbar">
+
+
+        <a class="navbar-brand" href="#home">
+            <img src="https://i.ibb.co/0h2z4qj/Vaidyuthak-1.jpg" class="Vaidyuthak-logo2" />
+        </a>
+        <div class="navbar-links" id="navbarNavAltMarkup">
+            <a class="nav-link button" href="#home"><b>Home</b></a>
+            <a class="nav-link button" href="#events"><b>Events</b></a>
+            <a class="nav-link button" href="#gallery"><b>Gallery</b></a>
+            <a class="nav-link button" href="#contact"><b>Connect Us</b></a>
+        </div>
+
+    </nav>
+    <!-- nav ***-->
+
+    <div class="main_body ">
+        <div class="p-3">
+            <div id="home">
+                <div class="text-center">
+                    <img class="vaidyathak_title" src="https://res.cloudinary.com/dylzolnfu/image/upload/v1731430573/vaidhayathuk_title_f28hay.png" />
+                    <h2 class="vaidhayathuk_subtitle">A State Level Techno Cultural Fest</h2>
+                </div><!-- vaidhyatuk heading **-->
+                <div class="about_us_section">
+                    <h5>The Department of Electronics and Communication Engineering at The National
+                        Institute of Engineering, Mysuru, is excited to announce the return of the ECE Fest, Vaidyuthak 2024!
+                        After the success of Vaidyuthak 2023, we're ready to make this year's event even more spectacular.</h5>
+
+                    <h5>Join us to showcase your skills and compete in exciting events. Whether you're into engineering projects, coding challenges, or robotics, there's
+                        an event for everyone! This is the perfect platform to display your talent, exchange ideas, and push
+                        the boundaries of technology. Mark your calendars for the 9th of December and get ready to demonstrate your creativity and technical prowess.</h5>
+
+                    <h5>Vaidyuthak 2024 is not just about competitions – it’s about learning, networking, and
+                        exploring the latest advancements in engineering. With engaging activities, expert interactions, and
+                        a vibrant atmosphere, this year's fest promises to be an unforgettable celebration of innovation and
+                        excellence!</h5>
+                </div> <!-- about us * -->
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="intro-box mt-3" id="events">
+                <div class="title">
+                    <h1 id="title1">LIST OF EVENTS</h1>
+                    <hr class="underline">
+                </div>
+                <div class="intro-box">
+                    <div class="competitions-wrapper d-flex flex-column  ">
+                        <div class="competition col-12 text-center " style="background-image: url('image12.jpg');">
+                            <h2>Project Presentation:-</h2>
+                            <p>Showcase your innovative projects and compete for the top prizes!</p>
+                            <p class="event-date">Date: 9th December, 2024</p>
+                            <p class="event-date">Entry Fee: Rs. 500</p>
+                            <p class="event-date">Prize: Upto Rs. 30,000</p>
+                            <a href="https://forms.gle/ih4sfjy5UB2EvJ6f6" class="register-link"><b>Register Now</b></a>
+                            <a href="#project" class="know-more-link"><b>Know More</b></a>
+                            <p>  </p>
+    <a id="download-link" href="Rules of Project Presentation.pdf" download>
+        <button style="margin-left: 10px;"><b>Terms & Rules</b></button>
+    </a>
+                        </div>
+                        <div class="competition col-12 text-center" style="background-image: url('image11.jpg');">
+                            <h2>Poster Presentation:-</h2>
+                            <p>Showcase your ideas, captivate your audience, and make your mark!</p>
+                            <p class="event-date">Date: 9th December, 2024</p>
+                            <p class="event-date">Entry Fee: Rs. 400</p>
+                            <p class="event-date">Prize: Upto Rs. 30,000</p>
+                            <a href="https://forms.gle/ih4sfjy5UB2EvJ6f6" class="register-link"><b>Register Now</b></a>
+                            <a href="#poster" class="know-more-link"><b>Know More</b></a>
+                            <p>  </p>
+
+                            <a id="download-link" href="Rules of Poster Presentation.pdf" download>
+                                <button style="margin-left: 10px;"><b>Terms & Rules</b></button>
+                            </a>
+                        </div>
+                        <div class="competition col-12 text-center " style="background-image: url('image13.jpg');">
+                            <h2> VLSI Hackathon Contest</h2>
+                            <p>Code, Create, Compete:-</p>
+                            <p>Where Innovation Has No Limits!.</p>
+                            <p class="event-date">Date: 9th December, 2024</p>
+                            <p class="event-date">Entry Fee: Rs. 500</p>
+                            <p class="event-date">Prize: Upto Rs. 30,000</p>
+                            <a href="https://forms.gle/ih4sfjy5UB2EvJ6f6" class="register-link"><b>Register Now</b></a>
+                            <a href="#hackthon" class="know-more-link"><b>Know More</b></a>
+                            <p>  </p>
+
+                            <a id="download-link" href="Rules of VLSI Hackathon.pdf" download>
+                                <button style="margin-left: 10px;"><b>Terms & Rules</b></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- introduction to events ***-->
+            <br>
+            <hr>
+            <br>
+            <div class="gallery_carsol1 mt-3" id="gallery">
+                <div>
+                    <h2 id="title1">GALLERY</h2>
+                    <hr class="underline">
+                    <br />
+                </div>
+                <div class="d-none d-md-block">
+                    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-interval="10000">
+                                <img src="IMG5.JPG" class="d-block w-100" alt="Image 1">
+                            </div>
+                            <div class="carousel-item" data-interval="2000">
+                                <img src="IMG4.JPG" class="d-block w-100" alt="Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="IMG8.JPG" class="d-block w-100" alt="Image 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="IMG6.JPG" class="d-block w-100" alt="Image 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="IMG_4317.JPG" class="d-block w-100" alt="Image 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="project1.JPG" class="d-block w-100" alt="Image 6">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="project3.JPG" class="d-block w-100" alt="Image 7">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="IMG2.JPG" class="d-block w-100" alt="Image 8">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image6.JPG" class="d-block w-100" alt="Image 9">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="IMG_3.JPG" class="d-block w-100" alt="Image 10">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image9.JPG" class="d-block w-100" alt="Image 11">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-block d-md-none">
+                    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-interval="10000">
+                                <img src="IMG5.JPG" class="d-block w-100" alt="Image 1">
+                            </div>
+                            <div class="carousel-item" data-interval="2000">
+                                <img src="IMG4.JPG" class="d-block w-100" alt="Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="IMG8.JPG" class="d-block w-100" alt="Image 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="IMG6.JPG" class="d-block w-100" alt="Image 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="IMG_4317.JPG" class="d-block w-100" alt="Image 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="project1.JPG" class="d-block w-100" alt="Image 6">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="project3.JPG" class="d-block w-100" alt="Image 7">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="IMG2.JPG" class="d-block w-100" alt="Image 8">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image6.JPG" class="d-block w-100" alt="Image 9">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="IMG_3.JPG" class="d-block w-100" alt="Image 10">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image9.JPG" class="d-block w-100" alt="Image 11">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <style>
+                /* Scoped styles for the gallery carousel */
+                #gallery {
+                    font-family: inherit; /* Matches global font */
+                    font-size: inherit; /* Matches global size */
+                }
+            
+                #gallery h2#title1 {
+                    font-size: 24px; /* Ensure title styling */
+                    text-align: center;
+                }
+            
+                #gallery .carousel-inner img {
+                    width: 100%;
+                    height: auto;
+                }
+            
+                @media (max-width: 768px) {
+                    #gallery .carousel-inner img {
+                        height: 300px;
+                        object-fit: cover;
+                    }
+                }
+            
+                #gallery hr.underline {
+                    border: 1px solid #000;
+                    width: 50%;
+                    margin: auto;
+                }
+            </style>
+            
+            
+        <div class="title">
+            <h1 id="title1">EVENTS HIGHLIGHTS</h1>
+            <hr class=" underline">
+        </div>
+<div id="project">
+        <div class="first-competition-box col-12 text-center ">
+            <div class="competition" style="background-image: url('https://img1.wallspic.com/crops/8/5/0/6/56058/56058-atmosphere-space-line-light-sky-2560x1440.jpg');">
+                <br>
+                <h1>Project Presentation:-</h1>
+                <br>
+                <br>
+                <div class="images" style="display: flex; margin-top: 10px;">
+                    <img src="project1.jpg" alt="Poster example 1" class="col-4" style="width: 50%; height: auto; border-width: 20px ; border-color:white;">
+                    <img src="project2.jpg" alt="Poster example 2" class="col-4" style="width: 50%; height: auto; border: 1px   ;">
+                    <img src="project3.jpg" alt="Poster example 3" class="col-4" style="width: 50%; height: auto; border: 1px ;">
+                    <br>
+                </div>
+                <br>
+                <br>
+                <h5 style="font-size:15px">Calling all innovators and thinkers! Join our <b>Poster Presentation Competition</b> and showcase your creative and research-driven ideas. With a prize pool of <b>upto</b> ₹30,000, this is your chance to gain recognition, hone your presentation skills, and engage with a community of like-minded individuals. Whether you're a student or professional, this competition is open to all. Stand out by presenting a unique project or research that highlights your creativity and problem-solving abilities. <b>Don't miss out—</b>register today and take the first step towards winning amazing prizes!</h5>
+                <br><br>
+                <p class="event-date">Entry Fee: Rs. 500</p>
+                <p class="event-date">Date: 9th December, 2024</p>
+                <br>
+                <a href="https://forms.gle/ih4sfjy5UB2EvJ6f6" class="register-link"><b>Register Now</b></a>
+                <p>  </p>
+
+                <a id="download-link" href="Rules of Project Presentation.pdf" download>
+                    <button style="margin-left: 10px;"><b>Terms & Rules</b></button>
+                </a>
+            </div>
+        </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div id="poster">
+        <div class="first-competition-box col-12 text-center ">
+            <div class="competition" style="background-image: url('https://img1.wallspic.com/crops/8/5/0/6/56058/56058-atmosphere-space-line-light-sky-2560x1440.jpg');">
+                <br>
+                <h1>Poster Presentation:-</h1>
+                <br>
+                <div class="images" style="display: flex; margin-top: 10px;">
+                    <img src="poster1.jpg" alt="Poster example 1" class="col-4" style="width: 50%; height: auto;">
+                    <img src="poster4.jpg" alt="Poster example 2" class="col-4" style="width: 50%; height: auto   ;">
+                    <img src="poster2.jpg" alt="Poster example 3" class="col-4" style="width: 50%; height: auto;  ">
+                    <br>
+                </div>
+                <br>
+                <br>
+                <h5 style="font-size:15px">Get ready to display your creativity and research skills in our exciting <b>Poster Presentation Competition</b>! Whether you're an emerging innovator or a seasoned researcher, this is the perfect platform to showcase your ideas to a broader audience. The competition offers an incredible <b>prize pool of up to</b> ₹30,000, rewarding the best, most impactful presentations. Participants are invited to create posters that highlight their innovative projects, research findings, or real-world solutions. <b>Don’t miss this opportunity to stand out, gain exposure, and compete for exciting rewards.</b> Register now and make your first step towards success!</h5>
+                <br>
+                <p class="event-date">Entry Fee: Rs. 400</p>
+                <p class="event-date">Date: 9th December, 2024</p>
+                <br>
+                <a href="https://forms.gle/ih4sfjy5UB2EvJ6f6" class="register-link"><b>Register Now</b></a>
+                <p>  </p>
+
+                <a id="download-link" href="Rules of Poster Presentation.pdf" download>
+                    <button style="margin-left: 10px;"><b>Terms & Rules</b></button>
+                </a>
+            </div>
+        </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div id="hackthon">
+        <div class="first-competition-box col-12 text-center ">
+            <div class="competition" style="background-image: url('https://img1.wallspic.com/crops/8/5/0/6/56058/56058-atmosphere-space-line-light-sky-2560x1440.jpg');">
+                <br>
+                <h1>VLSI Hackathon Contest:-</h1>
+                <br>
+                <div class="images" style="display: flex; margin-top: 10px;">
+                    <img src="image7.jpg" alt="Poster example 1" class="col-4" style="width: 50%; height: auto; border-width: 20px ; border-color:white;">
+                    <img src="image8.jpg" alt="Poster example 2" class="col-4" style="width: 50%; height: auto; border: 1px   ;">
+                    <img src="image9.jpg" alt="Poster example 3" class="col-4" style="width: 50%; height: auto; border: 1px ;">
+                    <br>
+                </div>
+                <br>
+                <br>
+                <h5 style="font-size:15px">Unleash your coding skills and innovation in our thrilling <b>Hackathon Contest</b>! This is your chance to solve real-world problems, build cutting-edge solutions, and compete for a <b>prize pool of up to </b> ₹30,000. Whether you’re an experienced developer or a passionate beginner, this contest offers a platform for all. Form teams, brainstorm ideas, and develop a functional prototype within the given time. <b>Don't miss out on the chance to challenge yourself, gain recognition, and win amazing prizes!</b> Register now and take the first step towards becoming a tech innovator!</h5>
+                <br>
+                <p class="event-date">Entry Fee: Rs. 500</p>
+                <p class="event-date">Date: 9th December, 2024</p>
+                <br>
+                <a href="https://forms.gle/ih4sfjy5UB2EvJ6f6" class="register-link"><b>Register Now</b></a>
+                <p>  </p>
+
+                <a id="download-link" href="Rules of VLSI Hackathon.pdf" download>
+                    <button style="margin-left: 10px;"><b>Terms & Rules</b></button>
+                </a>
+            </div>
+        </div>
+        </div>
+
+        <!-- explain of events ***-->
+        <div id="contact">
+            <div class="faculty-section">
+                <div class="title">
+                    <h1>CHIEF PATRONS</h1>
+                    <hr class="underline">
+                </div>
+                <div class="d-flex flex-row justify-content-center  ">
+                    <div class="faculty_card col-4">
+                        <img src="https://i.ibb.co/j8nR801/images-1.jpg" class="faculty_img " />
+                        <p class="faculty_name">Dr . M S GaneshPrasad</p>
+                        <p class="faculty_post">Vice Principal, NIE Mysuru</p>
+                    </div>
+                    <div class="faculty_card col-4">
+                        <img src=" https://i.ibb.co/9TwGGPp/images.jpg" class="faculty_img" />
+                        <p class="faculty_name">Dr . Rohini Nagapadma</p>
+                        <p class="faculty_post">Principal, NIE Mysuru</p>
+                    </div>
+                    <div class="faculty_card col-4">
+                        <img src="https://i.ibb.co/Jrh0JLs/images-2.jpg" class="faculty_img" />
+                        <p class="faculty_name">Dr . Parameshwar S</p>
+                        <p class="faculty_post">HOD, ECE, NIE Mysore</p>
+                    </div>
+                </div>
+            </div>
+            <div id="contact" class="contact-section ">
+                <!-- contact section -->
+                <div class="footer-section  pb-3">
+                    <div class=" pb-3">
+                        <h1 id="title1">CONNECT US</h1>
+                        <hr class="underline ">
+                    </div>
+                    <div class="  d-flex flex-row justify-content-center  ">
+
+                        <div class="faculty_card col-6">
+
+                            <p class="faculty_name">Vinay K Gowda</p>
+                            <p class="faculty_post">Technical committee <br />
+                                +91 7676713334</p>
+                        </div>
+
+                        <div class="faculty_card col-6">
+
+                            <p class="faculty_name">Harshitha H</p>
+                            <p class="faculty_post">Technical committee <br>
+                                +91 8618262949</p>
+                        </div>
+
+                    </div>
+                    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div>
+        <div class="d-flex flex-row justify-content-center col-12">
+            <div class="follow-us-icon-container">
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSDZcsFHsMlxQLrmWFQWqxNbjsCTghPTNMJRdRPbJFZqfQmKNqWFrkjZbLHDgwbhCnFzlwxH" target="_blank">
+                    <i class="fa fa-envelope icon"></i>
+                </a>
+            </div>
+            <div class="follow-us-icon-container">
+                <a href="https://www.instagram.com/vaidyuthak_2024/?igsh=ZHM3cWs3ZWx2MTl3#" target="_blank">
+                    <i class="fab fa-instagram icon"></i>
+                </a>
+            </div>
+            <div class="follow-us-icon-container">
+                <a href="https://chat.whatsapp.com/" target="_blank">
+                    <i class="fab fa-whatsapp icon"></i>
+                </a>
+            </div>
+            <div class="follow-us-icon-container">
+                <a href="https://maps.app.goo.gl/B79Z4uut8Hf2mS91A" target="_blank">
+                    <i class="fas fa-map-marker-alt icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="pt-2">
+        <h1 class="footer-section-address col-12">The National Institute Of Engineering Mysuru, Karnataka-570008</h1>
+    </div>
+    <div class="d-flex flex-row justify-content-center">
+        <div class="p-1 col-3">
+            <img src="https://res.cloudinary.com/dylzolnfu/image/upload/v1731256773/nie_logo_be0yrr.png" class="faculty_img" />
+        </div>
+        <div class="p-1 col-3">
+            <img src="https://i.ibb.co/0h2z4qj/Vaidyuthak-1.jpg" class="faculty_img" />
+        </div>
+        <div class="p-1 col-3">
+            <img src="https://i.ibb.co/s62kZXt/IMG-20241114-114845.jpg" class="faculty_img" />
+        </div>
+        <div class="p-1 col-3">
+            <img src="https://res.cloudinary.com/dylzolnfu/image/upload/v1731256870/nie_ec_logo_mzadiw.jpg" class="faculty_img" />
+        </div>
+    </div>
+</body>
+</html>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <footer class="col-12">
+            <div class=" d-flex flex-row justify-content-center pt-2 pb-2">
+                <p class="footer-para  text-center">Website Developed by
+                    <a href="https://www.linkedin.com/in/deekshithp2485" target="_blank">Deekshith P,</a>
+                    <a href="https://www.linkedin.com/in/parushuram-malagaddi" target="_blank">Parushuram M </a> , ECE @NIE'26 ,
+                    <a href="https://www.linkedin.com/in/sudarshan-r-srinivas-868693278/" target="_blank">Sudarshan R Srinivas</a> ,ECE @NIE'27
+                </p>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('navbar');
+
+        // Add an event listener to handle scroll behavior
+        window.addEventListener('scroll', function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll > lastScrollTop) {
+                // If user scrolls down, hide the navbar
+                navbar.style.top = "-60px"; // Adjust based on navbar height
+                navbar.style.opacity = "0"; // Make the navbar fully transparent
+                navbar.style.visibility = "hidden"; // Make the navbar fully hidden
+            } else {
+                // If user scrolls up, show the navbar
+                navbar.style.top = "0";
+                navbar.style.opacity = "1"; // Restore full opacity
+                navbar.style.visibility = "visible"; // Make it visible again
+            }
+
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll values
+        });
+    </script>
+</body>
+
+</html>
